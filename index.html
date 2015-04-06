@@ -43,7 +43,7 @@
     <ul>
 	    <li>导入mana.jar及其依赖包</li>
 		<li>添加配置文件，它们都在src根目录下。（建议新建一个源码文件夹，将配置文件放入其中）</li>
-		<li>修改数据库配置，及 你的Action所在的包</li>
+		<li>修改数据库配置，及 你的Action所在的主要包路径</li>
 	</ul>
 </p>
 
@@ -52,7 +52,11 @@
 
 <pre>
     <code>
-         <img src="images/web.png">
+         <img src="images/web.png"/><br/>
+		 <p>
+		     这里我的action所在的包路径为：cn.itcast.web<br/>
+             这里需要在system.properties里配置为action=cn.itcast.web
+		 </p>
     </code>
 </pre>
 
@@ -61,7 +65,17 @@
 
 <pre>
     <code>
-         
+         public String index(){
+		    return "/index.html";
+	     }
+	
+	     public String home(){
+		     return "index.jsp";
+	     }
+	
+	     public void hello(){
+		     print("hello boy");
+	     }
 	</code>
 </pre>
 
