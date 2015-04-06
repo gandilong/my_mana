@@ -65,30 +65,31 @@
 
 <pre>
     <code>
-	     pubblic class IndexAction extends Action{
-		     //请求路径为：index/index  返回web根目录中的index.html
-             public String index(){
-		        return "/index.html";
-	         }
+public class IndexAction extends Action{
+         //请求路径为：index/index  返回web根目录中的index.html
+         public String index(){
+		     return "/index.html";
+	     }
 	
-	         //请求路径为：index/home    返回WEB-INF/index文件夹下的index.jsp
-	         public String home(){
-		         return "index.jsp";
-	         }
+	     //请求路径为：index/home    返回WEB-INF/index文件夹下的index.jsp
+	     public String home(){
+		      return "index.jsp";
+	     }
 	         
-			 //请求路径为：index/hello    返回字符串"hello boy"到输出流中。
-			 //常用于ajax请求
-	         public void hello(){
-		         print("hello boy");
-	         }
-		 }
+		 //请求路径为：index/hello    返回字符串"hello boy"到输出流中。
+		 //常用于ajax请求
+	     public void hello(){
+		      print("hello boy");
+	    }
+}
 		 <p>
 以上方法分两种，一种以String为返回值，用于返回页面，开头带斜杠的表示文件在web根目录<br/>
   一种以void 为返回值，用于ajax请求，采用servlet3.0异步处理功能。
 
 请求路径及返回页面，都是基于约定的。
 例如cn.itcast.web.IndexAction其请求路径为index/方法名，返回页面在WEB-INF/index文件夹中
-cn.itcast.web.system.UserAction其请求路径为system/user/方法名,返回页面在WEB-INF/system/user文件夹中
+cn.itcast.web.system.UserAction其请求路径为system/user/方法名,<br/>
+                      返回页面在WEB-INF/system/user文件夹中
 		 </p>
 	</code>
 </pre>
