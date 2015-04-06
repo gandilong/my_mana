@@ -1,0 +1,6 @@
+这里是配置文件存放处
+Apache Commons DBCP 2.0.1 for JDBC 4.1 (Java 7.0+)
+Apache Commons DBCP 1.4 for JDBC 4 (Java 6.0) <--- 本框架目前采用
+
+页面模板配置
+flush_time 设置模板引擎刷新内存时间，单位毫秒 ,如果设置为0表示每次请求都刷新，-1表示永不刷新
